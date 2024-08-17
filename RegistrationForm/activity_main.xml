@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="Event Registration Page"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:textSize="24sp"
+        android:hint="Enter Username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editEmailId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Enter Emailid"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/RGSession"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+    <RadioGroup
+        android:id="@+id/RGSession"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailId">
+
+        <RadioButton
+            android:id="@+id/radioMorning"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <RadioButton
+            android:id="@+id/radioEvening"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Evening"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:padding="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RGSession">
+
+        <CheckBox
+            android:id="@+id/checkBoxLunch"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:text="Lunch"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNetworking"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:text="Networking"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="282dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
