@@ -16,7 +16,8 @@ This collection is specially curated for first-time Android developers. Here, yo
 
 ## Projects and Examples
 [Date Picker](https://github.com/leenanadkar/AndroidBasics/tree/main/Date%20Picker)
-
+[List View](https://github.com/leenanadkar/AndroidBasics/tree/main/ListView)
+[Registration Form](https://github.com/leenanadkar/AndroidBasics/tree/main/RegistrationForm)
 
 ## License
 
