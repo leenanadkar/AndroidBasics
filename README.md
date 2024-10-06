@@ -5,7 +5,6 @@ Comprehensive examples showcasing basic Android Components
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Projects and Examples](#projects-and-examples)
 - [License](#license)
 - [Contact](#contact)
 
@@ -13,11 +12,6 @@ Comprehensive examples showcasing basic Android Components
 
 This collection is specially curated for first-time Android developers. Here, you'll find simple and easy-to-understand examples.
 
-
-## Projects and Examples
-  -[Date Picker](https://github.com/leenanadkar/AndroidBasics/tree/main/Date%20Picker)
-  -[List View](https://github.com/leenanadkar/AndroidBasics/tree/main/ListView)
-  -[Registration Form](https://github.com/leenanadkar/AndroidBasics/tree/main/RegistrationForm)
 
 ## License
 
